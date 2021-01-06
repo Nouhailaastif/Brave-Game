@@ -1,0 +1,310 @@
+{{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+  BRAVE - Verification
+{% endblock %}
+
+{% block content %}
+<p> Please verify the calculus to make sure that transactions are right!</p>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Verification</th>
+      <th scope="col">+</th>
+      <th scope="col">+</th>
+      <th scope="col">+</th>
+			<th scope="col">+</th>
+			<th scope="col">ANSWER</th>
+			<th scope="col">Exec 1</th>
+			<th scope="col">Exec 2</th>
+    </tr>
+  </thead>
+  <tbody>
+
+<!-- Table 1 -->
+		<tr>
+      <th scope="row">Task :</th>
+			<td>1</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>10</td>
+      <td>5</td>
+      <td>3</td>
+			<td>10</td>
+			<td>{% formfield player.Answer_1_1 %}</td>
+			<td>{{ EX1_Answer_1_1}}</td>
+			<td>{{ EX2_Answer_1_1}}</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>1</td>
+      <td>17</td>
+      <td>13</td>
+			<td>18</td>
+			<td>{% formfield player.Answer_1_2 %}</td>
+			<td>{{ EX1_Answer_1_2}}</td>
+			<td>{{ EX2_Answer_1_2}}</td>
+    </tr>
+		<tr>
+      <th scope="row">3</th>
+      <td>26</td>
+      <td>13</td>
+      <td>5</td>
+			<td>22</td>
+			<td>{% formfield player.Answer_1_3 %}</td>
+			<td>{{ EX1_Answer_1_3}}</td>
+			<td>{{ EX2_Answer_1_3}}</td>
+    </tr>
+		<tr>
+      <th scope="row">4</th>
+      <td>12</td>
+      <td>15</td>
+      <td>11</td>
+			<td>28</td>
+			<td>{% formfield player.Answer_1_4 %}</td>
+			<td>{{ EX1_Answer_1_4}}</td>
+			<td>{{ EX2_Answer_1_4}}</td>
+    </tr>
+		<tr>
+      <th scope="row">5</th>
+      <td>17</td>
+      <td>30</td>
+      <td>23</td>
+			<td>14</td>
+			<td>{% formfield player.Answer_1_5 %}</td>
+			<td>{{ EX1_Answer_1_5}}</td>
+			<td>{{ EX2_Answer_1_5}}</td>
+    </tr>
+
+<!-- Table 2 -->
+		<tr>
+      <th scope="row">Task :</th>
+			<td>2</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>13</td>
+      <td>22</td>
+      <td>4</td>
+			<td>6</td>
+			<td>{% formfield player.Answer_2_1 %}</td>
+			<td>{{ EX1_Answer_2_1}}</td>
+			<td>{{ EX2_Answer_2_1}}</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>15</td>
+      <td>7</td>
+      <td>6</td>
+			<td>11</td>
+			<td>{% formfield player.Answer_2_2 %}</td>
+			<td>{{ EX1_Answer_2_2}}</td>
+			<td>{{ EX2_Answer_2_2}}</td>
+    </tr>
+		<tr>
+      <th scope="row">3</th>
+      <td>23</td>
+      <td>8</td>
+      <td>4</td>
+			<td>9</td>
+			<td>{% formfield player.Answer_2_3 %}</td>
+			<td>{{ EX1_Answer_2_3}}</td>
+			<td>{{ EX2_Answer_2_3}}</td>
+    </tr>
+		<tr>
+      <th scope="row">4</th>
+      <td>12</td>
+      <td>17</td>
+      <td>20</td>
+			<td>18</td>
+			<td>{% formfield player.Answer_2_4 %}</td>
+			<td>{{ EX1_Answer_2_4}}</td>
+			<td>{{ EX2_Answer_2_4}}</td>
+    </tr>
+		<tr>
+      <th scope="row">5</th>
+      <td>1</td>
+      <td>19</td>
+      <td>1</td>
+			<td>16</td>
+			<td>{% formfield player.Answer_2_5 %}</td>
+			<td>{{ EX1_Answer_2_5}}</td>
+			<td>{{ EX2_Answer_2_5}}</td>
+    </tr>
+
+<!-- Table 3 -->
+		<tr>
+      <th scope="row">Task :</th>
+			<td>3</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>13</td>
+      <td>9</td>
+      <td>0</td>
+			<td>0</td>
+			<td>{% formfield player.Answer_3_1 %}</td>
+			<td>{{ EX1_Answer_3_1}}</td>
+			<td>{{ EX2_Answer_3_1}}</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>3</td>
+      <td>15</td>
+      <td>6</td>
+			<td>9</td>
+			<td>{% formfield player.Answer_3_2 %}</td>
+			<td>{{ EX1_Answer_3_2}}</td>
+			<td>{{ EX2_Answer_3_2}}</td>
+    </tr>
+		<tr>
+      <th scope="row">3</th>
+      <td>1</td>
+      <td>7</td>
+      <td>4</td>
+			<td>9</td>
+			<td>{% formfield player.Answer_3_3 %}</td>
+			<td>{{ EX1_Answer_3_3}}</td>
+			<td>{{ EX2_Answer_3_3}}</td>
+    </tr>
+		<tr>
+      <th scope="row">4</th>
+      <td>22</td>
+      <td>7</td>
+      <td>21</td>
+			<td>18</td>
+			<td>{% formfield player.Answer_3_4 %}</td>
+			<td>{{ EX1_Answer_3_4}}</td>
+			<td>{{ EX2_Answer_3_4}}</td>
+    </tr>
+		<tr>
+      <th scope="row">5</th>
+      <td>8</td>
+      <td>5</td>
+      <td>12</td>
+			<td>6</td>
+			<td>{% formfield player.Answer_3_5 %}</td>
+			<td>{{ EX1_Answer_3_5}}</td>
+			<td>{{ EX2_Answer_3_5}}</td>
+    </tr>
+
+<!-- Table 4 -->
+		<tr>
+      <th scope="row">Task :</th>
+			<td>4</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>10</td>
+      <td>5</td>
+      <td>6</td>
+			<td>0</td>
+			<td>{% formfield player.Answer_4_1 %}</td>
+			<td>{{ EX1_Answer_4_1}}</td>
+			<td>{{ EX2_Answer_4_1}}</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>3</td>
+      <td>14</td>
+      <td>7</td>
+			<td>20</td>
+			<td>{% formfield player.Answer_4_2 %}</td>
+			<td>{{ EX1_Answer_4_2}}</td>
+			<td>{{ EX2_Answer_4_2}}</td>
+    </tr>
+		<tr>
+      <th scope="row">3</th>
+      <td>9</td>
+      <td>5</td>
+      <td>22</td>
+			<td>16</td>
+			<td>{% formfield player.Answer_4_3 %}</td>
+			<td>{{ EX1_Answer_4_3}}</td>
+			<td>{{ EX2_Answer_4_3}}</td>
+    </tr>
+		<tr>
+      <th scope="row">4</th>
+      <td>28</td>
+      <td>15</td>
+      <td>1</td>
+			<td>8</td>
+			<td>{% formfield player.Answer_4_4 %}</td>
+			<td>{{ EX1_Answer_4_4}}</td>
+			<td>{{ EX2_Answer_4_4}}</td>
+    </tr>
+		<tr>
+      <th scope="row">5</th>
+      <td>26</td>
+      <td>11</td>
+      <td>15</td>
+			<td>14</td>
+			<td>{% formfield player.Answer_4_5 %}</td>
+			<td>{{ EX1_Answer_4_5}}</td>
+			<td>{{ EX2_Answer_4_5}}</td>
+    </tr>
+
+<!-- Table 5 -->
+		<tr>
+      <th scope="row">Task :</th>
+			<td>5</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>10</td>
+      <td>5</td>
+      <td>3</td>
+			<td>10</td>
+			<td>{% formfield player.Answer_5_1 %}</td>
+			<td>{{ EX1_Answer_5_1}}</td>
+			<td>{{ EX2_Answer_5_1}}</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>1</td>
+      <td>17</td>
+      <td>13</td>
+			<td>18</td>
+			<td>{% formfield player.Answer_5_2 %}</td>
+			<td>{{ EX1_Answer_5_2}}</td>
+			<td>{{ EX2_Answer_5_2}}</td>
+    </tr>
+		<tr>
+      <th scope="row">3</th>
+      <td>26</td>
+      <td>13</td>
+      <td>5</td>
+			<td>22</td>
+			<td>{% formfield player.Answer_5_3 %}</td>
+			<td>{{ EX1_Answer_5_3}}</td>
+			<td>{{ EX2_Answer_5_3}}</td>
+    </tr>
+		<tr>
+      <th scope="row">4</th>
+      <td>12</td>
+      <td>15</td>
+      <td>11</td>
+			<td>28</td>
+			<td>{% formfield player.Answer_5_4 %}</td>
+			<td>{{ EX1_Answer_5_4}}</td>
+			<td>{{ EX2_Answer_5_4}}</td>
+    </tr>
+		<tr>
+      <th scope="row">5</th>
+      <td>17</td>
+      <td>30</td>
+      <td>23</td>
+			<td>14</td>
+			<td>{% formfield player.Answer_5_5 %}</td>
+			<td>{{ EX1_Answer_5_5}}</td>
+			<td>{{ EX2_Answer_5_5}}</td>
+    </tr>
+
+  </tbody>
+</table>
+
+    {% next_button %}
+{% endblock %}

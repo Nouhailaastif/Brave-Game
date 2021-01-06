@@ -1,0 +1,67 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+  BRAVE - TASK 5
+{% endblock %}
+
+{% block content %}
+<p> Please calculate the values according to the head signs of the columns.</p>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">TASK 5</th>
+      <th scope="col">+</th>
+      <th scope="col">+</th>
+      <th scope="col">+</th>
+			<th scope="col">+</th>
+			<th scope="col">ANSWER</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>10</td>
+      <td>5</td>
+      <td>3</td>
+			<td>10</td>
+			<td>{% formfield player.EX2_Answer_5_1 %}</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>1</td>
+      <td>17</td>
+      <td>13</td>
+			<td>18</td>
+			<td>{% formfield player.EX2_Answer_5_2 %}</td>
+    </tr>
+		<tr>
+      <th scope="row">3</th>
+      <td>26</td>
+      <td>13</td>
+      <td>5</td>
+			<td>22</td>
+			<td>{% formfield player.EX2_Answer_5_3 %}</td>
+    </tr>
+		<tr>
+      <th scope="row">4</th>
+      <td>12</td>
+      <td>15</td>
+      <td>11</td>
+			<td>28</td>
+			<td>{% formfield player.EX2_Answer_5_4 %}</td>
+    </tr>
+		<tr>
+      <th scope="row">5</th>
+      <td>17</td>
+      <td>30</td>
+      <td>23</td>
+			<td>14</td>
+			<td>{% formfield player.EX2_Answer_5_5 %}</td>
+    </tr>
+  </tbody>
+</table>
+
+    {% next_button %}
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+	<img alt="BSB-Logo" src="https://www.bsb-education.com/wp-content/themes/bsb/img/BSB_logo_LFC_burgundy.png" width="500rem" />
+	<br><br>
+  BRAVE - Introduction
+{% endblock %}
+
+{% block content %}
+<p>
+Welcome to this experiment, please click "Next" when you are ready.<br>
+Read carefully the content that is given to you, in order to make sure you follow the instructions.
+</p>
+
+
+    {% next_button %}
+
+{% endblock %}

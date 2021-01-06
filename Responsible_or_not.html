@@ -1,0 +1,14 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+  BRAVE - Choose a role
+{% endblock %}
+
+{% block content %}
+<p>
+{% formfield player.role_decision %}
+</p>
+    {% next_button %}
+
+{% endblock %}

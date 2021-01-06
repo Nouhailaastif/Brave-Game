@@ -1,0 +1,14 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+  BRAVE - Your Role
+{% endblock %}
+
+{% block content %}
+
+Your role is {{ player.role_attribution }}
+
+    {% next_button %}
+
+{% endblock %}

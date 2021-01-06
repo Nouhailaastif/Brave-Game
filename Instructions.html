@@ -1,0 +1,38 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    BRAVE - Instructions
+{% endblock %}
+
+{% block content %}
+<p>
+For this experiment, you will have to make a choice first :<br>
+
+In any case, you will be given several tables of calculations.<br>
+This is a repetitive task and one of the members will have to check the results of the other members.<br>
+Depending on the response of each player, roles will either be attributed or randomized.<br><br>
+Indeed, if only one of the players wants to take this responsibility he will get the role.<br>
+However, if nobody wants this role or if more than one player wants it, a random selection will be performed.
+</p>
+<br>
+<p>
+When role will be distributed, each member will have to fulfil its tasks:<br>
+- Fill the calculation tables, for the two lowest responsibility players, called executants;<br>
+- Choose to correct tables filled by the executants and validate them, for the highest responsibility player, called manager.<br>
+</p>
+
+<p>
+Theses tasks will be remunerated.<br>
+The overall budget is <b>60€</b>.<br>
+- In case all answers are correct, the endowments are distributed equally (20€ each).<br>
+- In case one mistake was spotted, the earnings of the two executants will be decreased by 1€ each.<br>
+The final amount deducted from the executants will be handed over to the manager.<br>
+At the end of the game, only one period will be randomly selected for the payment. The number of periods is unknown.
+</p>
+    {% next_button %}
+
+{% endblock %}
+```
+
+

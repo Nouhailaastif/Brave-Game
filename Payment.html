@@ -1,0 +1,42 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+  BRAVE - Payment
+{% endblock %}
+
+{% block content %}
+<p>
+Considering the number of errors in the randomly selected period : {{ player.errors }} error(s).<br>
+Your role : {{ player.role_attribution }}<br>
+And the initial share you received : 20 €.<br>
+
+
+    {% if player.role_attribution == manager %}
+
+    <br>
+You are going to be paid now : {{ payment_MG }}€<br>
+
+    {% endif%}
+
+    {% elif player.role_attribution == executant1 %}
+
+    <br>
+You are going to be paid now : {{ player.payment_EX1 }}€<br>
+
+    {% endif%}
+
+    {% elif player.role_attribution == executant2 %}
+
+    <br>
+You are going to be paid now : {{ player.payment_EX2 }}€<br>
+
+    {% endif%}
+
+</p>
+<p>
+You are almost done with the experiment but before, please, answer to the following questions.
+</p>
+    {% next_button %}
+
+{% endblock %}
